@@ -6,3 +6,14 @@
 /pkg/
 /spec/reports/
 /tmp/
+
+# Rails master keys should never be committed
+example/*/config/master.key
+example/*/config/credentials.yml.enc
+
+# Rails tmp and cache files
+example/*/tmp/
+example/*/log/
+example/*/storage/
+example/*/.byebug_history
+example/*/Gemfile.lock

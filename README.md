@@ -1,5 +1,8 @@
 # Sidekiq MCP
 
+[![Gem Version](https://badge.fury.io/rb/sidekiq-mcp.svg)](https://badge.fury.io/rb/sidekiq-mcp)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/andrew/sidekiq-mcp/blob/main/LICENSE)
+
 A Sidekiq plugin that provides an MCP (Model Context Protocol) server, enabling LLMs to interact with Sidekiq queues, statistics, and failed jobs through a standardized interface.
 
 ## Available Tools

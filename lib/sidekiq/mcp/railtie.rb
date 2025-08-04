@@ -4,16 +4,16 @@ require "rails/railtie"
 
 module Sidekiq
   module Mcp
-    class Railtie < Rails::Railtie
+    class Railtie < ::Rails::Railtie
       railtie_name :sidekiq_mcp
 
-      config.after_initialize do
+      initializer "sidekiq_mcp.middleware" do |app|
         # Auto-configure if in Rails environment
-        Rails.application.config.middleware.use Sidekiq::Mcp::Middleware
+        app.config.middleware.use Sidekiq::Mcp::Middleware
         
         # Add SSE middleware if enabled
         if Sidekiq::Mcp.configuration&.sse_enabled != false
-          Rails.application.config.middleware.use Sidekiq::Mcp::SseMiddleware
+          app.config.middleware.use Sidekiq::Mcp::SseMiddleware
         end
       end
     end

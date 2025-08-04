@@ -11,7 +11,7 @@ require_relative "mcp/routes"
 # Load all tool classes
 Dir[File.join(__dir__, "mcp/tools/*.rb")].each { |file| require file }
 
-if defined?(Rails)
+if defined?(::Rails::Railtie)
   require_relative "mcp/railtie"
 end
 

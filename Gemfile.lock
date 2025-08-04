@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    sidekiq-mcp (0.1.0)
+    sidekiq-mcp (0.2.0)
       base64
       dry-schema (~> 1.13)
       rack (>= 2.0)
@@ -119,7 +119,7 @@ CHECKSUMS
   redis-client (0.25.1) sha256=40130f8f95194c9c73eec322516781b0bfdd8293369a67dc175bd7bc391a68bd
   reline (0.6.2) sha256=1dad26a6008872d59c8e05244b119347c9f2ddaf4a53dce97856cd5f30a02846
   sidekiq (8.0.6) sha256=4a0a9b12b206b7f86919afcb13041aa60f13f7d7b75a23c707aa5aba3e84fe46
-  sidekiq-mcp (0.1.0)
+  sidekiq-mcp (0.2.0)
   stringio (3.1.7) sha256=5b78b7cb242a315fb4fca61a8255d62ec438f58da2b90be66048546ade4507fa
   zeitwerk (2.7.3) sha256=b2e86b4a9b57d26ba68a15230dcc7fe6f040f06831ce64417b0621ad96ba3e85
 

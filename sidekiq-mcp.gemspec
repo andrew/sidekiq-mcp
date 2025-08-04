@@ -13,7 +13,6 @@ Gem::Specification.new do |spec|
   spec.homepage = "https://github.com/andrew/sidekiq-mcp"
   spec.required_ruby_version = ">= 3.2.0"
 
-  spec.metadata["allowed_push_host"] = "TODO: Set to your gem server 'https://example.com'"
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/andrew/sidekiq-mcp"
   spec.metadata["changelog_uri"] = "https://github.com/andrew/sidekiq-mcp/blob/main/CHANGELOG.md"
@@ -37,7 +36,4 @@ Gem::Specification.new do |spec|
   spec.add_dependency "dry-schema", "~> 1.13"
   
   spec.add_development_dependency "rack-test"
-
-  # For more information and examples about making a new gem, check out our
-  # guide at: https://bundler.io/guides/creating_gem.html
 end
